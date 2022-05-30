@@ -4,6 +4,19 @@ import ProductCard from "../components/ProductCard"
 export default function Home({ products }) {
 
   return (
+<div>
+      <header className=" bg-gray-700 text-white text-center w-full h-auto  ">
+        <div className="container mx-auto px-4 w-full">
+          <h1 className="text-3xl font-bold"> Mammoth Discs </h1>
+          <p className="text-xl">
+            We have the best discs around
+          </p>
+        </div>
+      </header>
+
+          
+
+
     <div className="bg-white">
       <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
         <h2 className="text-2xl font-extrabold text-gray-900 mb-6">
@@ -18,6 +31,8 @@ export default function Home({ products }) {
        </div>
       </div>
     </div>
+    </div>
+
   )
 }
 
