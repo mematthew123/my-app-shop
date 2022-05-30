@@ -5,14 +5,7 @@ export default function Home({ products }) {
 
   return (
 <div>
-      <header className=" bg-gray-700 text-white text-center w-full h-auto  ">
-        <div className="container mx-auto px-4 w-full">
-          <h1 className="text-3xl font-bold"> Mammoth Discs </h1>
-          <p className="text-xl">
-            We have the best discs around
-          </p>
-        </div>
-      </header>
+  <h1 className="text-3xl font-bold text-center content-center text-blue-500 px-6 mt-5 "> Welcome to Mammoth Discs </h1>
 
           
 
