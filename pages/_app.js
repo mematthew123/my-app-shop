@@ -1,18 +1,23 @@
-import '../styles/globals.css'
-import ProductCard from '../components/ProductCard'
-import Nav from '../components/Nav'
-import Footer  from '../components/Footer'
+import 'tailwindcss/tailwind.css'
+import 'swiper/swiper.scss'
+import 'swiper/components/navigation/navigation.scss'
+import 'swiper/components/pagination/pagination.scss'
+import Layout from '../components/Layout'
+import ShopProvider from '../context/shopContext'
+import { useRouter } from 'next/router'
+
+
+
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <>
-      <Nav />
-<Footer />
-    
-   <Component
+    const router = useRouter()
 
-  {...pageProps} />
-    </>
+  return (
+    <ShopProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ShopProvider>
 
   )
 }
