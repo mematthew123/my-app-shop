@@ -6,7 +6,7 @@ function Cta() {
 
     
 
-    <div className="my-48 mx-auto max-w-7xl px-4 sm:mt-24 md:mt-72 text-center">
+    <div className=" min-h-screen bottom-6 mx-auto max-w-7xl px-4 sm:mt-24 md:mt-24 text-center">
 
 
 
