@@ -20,11 +20,14 @@ function About() {
       </p>
 
       <p className="mt-10 max-w-md mx-auto">
-        We only sell one disc becuase that's the only disc you will ever need. We sell more than
-        discs however, we sell experiences.
+        The discs we carry are the only discs you will need. Some people will call us opionated, but
+        we like to to win.
       </p>
-      <BackButton />
+      <br />
+      <BackButton  />
     </div>
+
+
 
   )
 }
