@@ -1,6 +1,4 @@
 import { getProductsInCollection } from '../lib/shopify'
-import ProductList from '../components/ProductList'
-import Hero from '../components/Hero'
 import Cta from '../components/Cta'
 
 export default function Home({ products }) {
