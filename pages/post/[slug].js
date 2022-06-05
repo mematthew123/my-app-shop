@@ -1,9 +1,34 @@
+import styles from '../../styles/Post.module.css'
+import BlockContent from '@sanity/block-content-to-react'
+import imageUrlBuilder from '@sanity/image-url'
+import { useState, useEffect } from 'react'
+
 export const Post = ({ title, body, image }) => {
-  // console.log(title, body, image)
+  //  console.log(title, body, image)
+
+  const [imageUrl, setImageUrl] = useState('')
+
+  useEffect(() => {
+    const imgBuilder = imageUrlBuilder({
+      projectId: 'iravytgr',
+      dataset: 'production',
+    })
+
+    setImageUrl(imgBuilder.image(image))
+  }, [image])
 
   return (
     <div className="min-h-screen bottom-6 mx-auto max-w-7xl px-4 sm:mt-24 md:mt-24 text-center">
       <h1 className="font-extrabold text-gray-900">Mammoth Blog Page</h1>
+
+      <div className={styles.main}>
+        <h1>{title}</h1>
+        {imageUrl && <img className={styles.mainImage} src={imageUrl} />}
+
+        <div className={styles.body}>
+          <BlockContent blocks={body} />
+        </div>
+      </div>
     </div>
   )
 }
