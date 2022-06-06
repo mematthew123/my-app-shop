@@ -19,17 +19,15 @@ export const Post = ({ title, body, image }) => {
 
   return (
     <div className="min-h-screen bottom-6 mx-auto max-w-7xl px-4 sm:mt-24 md:mt-24 text-center">
-      <h1 className="font-extrabold text-gray-900">Mammoth Blog Page</h1>
+      <h1 className="px-2 mt-1 font-extrabold text-2xl text-gray-900">Mammoth Blog Page</h1>
 
       <div className={styles.main}>
-        <h1>{title}</h1>
+        <h1 className=" font-bold text-2xl text-blue-700 underline ">{title}</h1>
         {imageUrl && <img className={styles.mainImage} src={imageUrl} />}
 
-        <div className={styles.body}>
           <BlockContent blocks={body} />
         </div>
       </div>
-    </div>
   )
 }
 

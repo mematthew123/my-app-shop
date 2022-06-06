@@ -1,6 +1,3 @@
-import Image from 'next/dist/client/image'
-import BackButton from '../components/BackButton'
-
 // function Blog() {
 
 import Head from 'next/head'
@@ -36,27 +33,29 @@ export default function Blog({ posts }) {
   // return (
 
   return (
-    <div className="min-h-screen bottom-6 mx-auto max-w-7xl px-4 sm:mt-24 md:mt-24 text-center">
-      <h1 className="font-extrabold text-gray-900">
-        <p className="text-xl sm:text-3xl md:text-4xl">Mammoth Blog</p>
-      </h1>
-      <h3 className="text-xl sm:text-3xl md:text-4xl">Recent Posts:</h3>
+    <div className="flex flex-col md:flex-row col-auto justify-between ">
+      <div className="min-h-screen bottom-6 mx-auto max-w-7xl px-4 sm:mt-24 md:mt-24 text-center">
+        <h1 className="font-extrabold text-gray-900">
+          <p className="text-xl sm:text-3xl md:text-4xl">Mammoth Blog</p>
+        </h1>
+        <h3 className="text-xl sm:text-3xl md:text-4xl">Recent Posts:</h3>
 
-      <div className={styles.feed}>
-        {mappedPosts.length ? (
-          mappedPosts.map((p, index) => (
-            <div
-              onClick={() => router.push(`/post/${p.slug.current}`)}
-              key={index}
-              className={styles.post}
-            >
-              <h3>{p.title}</h3>
-              <img className={styles.mainImage} src={p.mainImage} />
-            </div>
-          ))
-        ) : (
-          <>No Posts Yet</>
-        )}
+        <div className=" flex col-span-2 rounded-lg mx-auto ">
+          {mappedPosts.length ? (
+            mappedPosts.map((p, index) => (
+              <div
+                onClick={() => router.push(`/post/${p.slug.current}`)}
+                key={index}
+                className=" inline-grid justify-center rounded-lg shadow-lg bg-white p-8 hover:cursor-pointer "
+              >
+                <h3 className=" inline-grid font-bold text-xl text-slate-800 ">{p.title}</h3>
+                <img src={p.mainImage} alt={p.title} />
+              </div>
+            ))
+          ) : (
+            <>No Posts Yet</>
+          )}
+        </div>
       </div>
     </div>
   )
