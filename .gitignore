@@ -30,3 +30,10 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+
+node_modules
+dist
+.next
+out
+.DS_Store

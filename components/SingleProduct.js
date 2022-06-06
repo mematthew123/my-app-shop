@@ -4,13 +4,17 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation, Pagination } from 'swiper'
 
 export default function SingleProduct({ product }) {
-  
   const images = []
 
   product.images.edges.map((image, i) => {
     images.push(
       <SwiperSlide key={`slide-${i}`}>
-        <Image src={image.node.originalSrc} alt={image.node.altText} layout="fill" objectFit="cover" />
+        <Image
+          src={image.node.originalSrc}
+          alt={image.node.altText}
+          layout="fill"
+          objectFit="cover"
+        />
       </SwiperSlide>
     )
   })
@@ -35,7 +39,9 @@ export default function SingleProduct({ product }) {
         </div>
         <ProductForm product={product} />
       </div>
-      <p className="pt-16 space-y-8 md:space-x-4 lg:space-x-8 max-w-3xl w-11/12 mx-auto">{product.description}</p>
+      <p className="pt-16 space-y-8 md:space-x-4 lg:space-x-8 max-w-3xl w-11/12 mx-auto">
+        {product.description}
+      </p>
     </div>
   )
 }
