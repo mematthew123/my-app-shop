@@ -5,11 +5,13 @@
 }
 .mainImage {
   width: 100%;
+  border-radius:20px
 }
 .body p {
-  font-size: 24px;
+  font-size: 30px;
   text-indent: 50px;
   line-height: 45px;
   text-align: justify;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.3px;
+  
 }

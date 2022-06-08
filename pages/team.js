@@ -19,7 +19,7 @@
           teams.map((p) => {
             return {
               ...p,
-              mainImage: imgBuilder.image(p.mainImage).width(500).height(250),
+              mainImage: imgBuilder.image(p.mainImage).width(400).height(250),
             }
           })
         )
@@ -38,7 +38,7 @@
           </h1>
           <h3 className="text-xl sm:text-3xl md:text-4xl">Meet the players</h3>
   
-          <div className=" flex col-span-2 rounded-lg mx-auto ">
+          <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
             {mappedteams.length ? (
               mappedteams.map((p, index) => (
                 <div
