@@ -78,6 +78,11 @@ function Cta() {
               Dream Team{' '}
             </a>
           </Link>
+          <Link href="/course">
+          <a className="inline-flex mx-2 flex-wrap mt-3 items-center justify-center gap-2 px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+             Mammoth Course{' '}
+            </a>
+          </Link>
           </div>
 
         </motion.div>

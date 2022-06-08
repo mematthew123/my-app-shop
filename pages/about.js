@@ -1,6 +1,7 @@
 import Image from 'next/dist/client/image'
 import BackButton from '../components/BackButton'
 
+
 function About() {
   return (
     <div className="min-h-screen bottom-6 mx-auto max-w-7xl px-4 sm:mt-24 md:mt-24 text-center">
