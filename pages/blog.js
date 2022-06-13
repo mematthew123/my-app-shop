@@ -21,7 +21,7 @@ export default function Blog({ posts }) {
         posts.map((p) => {
           return {
             ...p,
-            mainImage: imgBuilder.image(p.mainImage).width(500).height(250),
+            mainImage: imgBuilder.image(p.mainImage).width(800).height(650),
           }
         })
       )
@@ -34,13 +34,13 @@ export default function Blog({ posts }) {
 
   return (
     <div className="flex flex-col md:flex-row col-auto justify-between ">
-      <div className="min-h-screen bottom-6 mx-auto max-w-7xl px-4 sm:mt-24 md:mt-24 text-center">
+      <div className="min-h-screen bottom-6 mx-auto max-w-7xl px-4 sm:mt-24 md:mt-24 text-center justify-center ">
         <h1 className="font-extrabold text-gray-900">
           <p className="text-xl sm:text-3xl md:text-4xl">Mammoth Blog</p>
         </h1>
         <h3 className="text-xl sm:text-3xl md:text-4xl">Recent Posts:</h3>
 
-        <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+        <div className=" justify-center grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           {mappedPosts.length ? (
             mappedPosts.map((p, index) => (
               <div

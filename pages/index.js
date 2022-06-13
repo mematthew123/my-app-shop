@@ -26,8 +26,8 @@ export default function Home({ products }) {
               <Image
                 src={basket}
                 alt="disc golf"
-                width={1200}
-                height={800}
+                layout="fill"
+                objectFit="cover"
                 className="absolute inset-0 object-cover"
               />
             </div>
@@ -50,8 +50,8 @@ export default function Home({ products }) {
               <Image
                 src={sunset}
                 alt="sunset"
-                width={1200}
-                height={800}
+                layout="fill"
+                objectFit="cover"
                 className="absolute inset-0 object-cover"
               />
             </div>
@@ -72,19 +72,21 @@ export default function Home({ products }) {
 
       <div className="my-48 mx-auto flex-col max-w-7xl px-4 sm:mt-22 md:mt-72 text-center">
         <h1 className="font-extrabold text-gray-900">
-          <p className="text-xl sm:text-3xl md:text-4xl">About us</p>
+          <p className="text-xl sm:text-3xl md:text-4xl"> the Mammoth way
+</p>
         </h1>
         <div className=" text-2xl mt-3 max-w-md mx-auto text-gray-900 sm:text-lg md:mt-5 md:text-xl md:max-x-3xl">
 
-          the Mammoth way of life
-
+About us
           <div className="w-full bg-gray-200 rounded-3xl overflow-hidden">
-            <div className="relative group-hover:opacity-75 h-72 ">
+
+            
+            <div className="relative hover:opacity-75 h-72 ">
               <Image
                 src={tee}
                 alt="sunset"
-                width={1200}
-                height={800}
+                layout="fill"
+                objectFit="cover"
                 className="absolute inset-0 object-cover"
               />
             </div>
@@ -96,6 +98,7 @@ Learn more
           </Link>
         </div>
       </div>
+      
 
 
 
