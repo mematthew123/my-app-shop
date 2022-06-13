@@ -2,10 +2,11 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import tee from '../images/tee.webp'
 
 function Cta() {
   return (
-    <div className="my-48 mx-auto max-w-7xl px-4 sm:mt-22 md:mt-72 text-center">
+    <div className="my-48 mx-auto max-w-7xl px-4 sm:mt-22 md:mt-72 text-center pb-7">
       <h1 className="font-extrabold text-gray-900">
         <p className="text-xl sm:text-3xl md:text-4xl">Mammoth</p>
         <p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-gray-500 text-4xl sm:text-6xl md:text-7xl">
@@ -53,33 +54,27 @@ function Cta() {
             },
           }}
         >
-          <div className="flex flex-col md:flex-row">
+          {/* <div className=" bg-gray-200 rounded-3xl overflow-hidden min-w-full">
+            <div className="relative group-hover:opacity-75 h-72 ">
+              <Image
+                src={tee}
+                className=" rounded-lg overflow-hidden object-cover "
+                alt="throw"
+                width={1200}
+                height={800}
+              />
+            </div>
+          </div> */}
 
-          <Link href="/about">
-          <a className="inline-flex mx-2 flex-wrap mt-3 items-center justify-center gap-2 px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-              Learn More
-            </a>
-          </Link>
+          <div className=" justify-center flex flex-col md:flex-row">
+         
 
-          <Link href="/shop">
-          <a className="inline-flex mx-2 flex-wrap mt-3 items-center justify-center gap-2 px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-              Shop Now
-            </a>
-          </Link>
-
-          <Link href="/blog">
-          <a className="inline-flex mx-2 flex-wrap mt-3 items-center justify-center gap-2 px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-              Blog{' '}
-            </a>
-          </Link>
-          
-          <Link href="/team">
-          <a className="inline-flex mx-2 flex-wrap mt-3 items-center justify-center gap-2 px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-              Dream Team{' '}
-            </a>
-          </Link>
+            <Link href="/shop">
+              <a className="inline-flex mx-2 flex-wrap mt-3 items-center justify-center gap-2 px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                Shop Now
+              </a>
+            </Link>
           </div>
-
         </motion.div>
       </div>
     </div>
