@@ -1,8 +1,7 @@
-import styles from '../../styles/Team.module.css'
+import styles from '../styles/Team.module.css'
 import BlockContent from '@sanity/block-content-to-react'
 import imageUrlBuilder from '@sanity/image-url'
 import { useState, useEffect } from 'react'
-
 export const Team = ({ title, body, image }) => {
   //  console.log(title, body, image)
 

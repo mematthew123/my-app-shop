@@ -1,7 +1,3 @@
-// function Blog() {
-
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import imageUrlBuilder from '@sanity/image-url'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'

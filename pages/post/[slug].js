@@ -25,9 +25,9 @@ export const Post = ({ title, body, image }) => {
         <h1 className=" font-bold text-2xl text-blue-700 underline ">{title}</h1>
         {imageUrl && <img className={styles.mainImage} src={imageUrl} />}
 
-          <BlockContent blocks={body} />
-        </div>
+        <BlockContent blocks={body} />
       </div>
+    </div>
   )
 }
 
