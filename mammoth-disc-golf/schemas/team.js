@@ -17,11 +17,7 @@ export default {
         maxLength: 96,
       },
     },
-    {
-      name: 'description',
-      title: 'Bio',
-      type: 'text',
-    },
+
 
     {
       name: 'mainImage',
@@ -30,6 +26,12 @@ export default {
       options: {
         hotspot: true,
       },
+    },
+
+    {
+      name: 'body',
+      title: 'Body',
+      type: 'blockContent',
     },
 
     {
