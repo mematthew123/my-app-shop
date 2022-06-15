@@ -8,7 +8,7 @@ import Image from 'next/image'
 import sunset from '../images/sunset.jpeg'
 import basket from '../images/basket.webp'
 import tee from '../images/tee.webp'
-
+import greenbasket from '../images/greenbasket.webp'
 
 export default function Home({ products }) {
   return (
@@ -64,23 +64,13 @@ export default function Home({ products }) {
         </div>
       </div>
 
-
-
-
-
-
-
       <div className="my-48 mx-auto flex-col max-w-7xl px-4 sm:mt-22 md:mt-72 text-center">
         <h1 className="font-extrabold text-gray-900">
-          <p className="text-xl sm:text-3xl md:text-4xl"> the Mammoth way
-</p>
+          <p className="text-xl sm:text-3xl md:text-4xl"> the Mammoth way</p>
         </h1>
         <div className=" text-2xl mt-3 max-w-md mx-auto text-gray-900 sm:text-lg md:mt-5 md:text-xl md:max-x-3xl">
-
-About us
+          About us
           <div className="w-full bg-gray-200 rounded-3xl overflow-hidden">
-
-            
             <div className="relative hover:opacity-75 h-72 ">
               <Image
                 src={tee}
@@ -93,20 +83,37 @@ About us
           </div>
           <Link href="/about">
             <a className=" inline-flex mx-2 flex-wrap mt-3 items-center justify-center px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-Learn more
-</a>
+              Learn more
+            </a>
           </Link>
         </div>
       </div>
-      
 
+      <div className="my-48 mx-auto flex-col max-w-7xl px-4 sm:mt-22 md:mt-72 text-center">
+        <h1 className="font-extrabold text-gray-900">
+          <p className="text-xl sm:text-3xl md:text-4xl"> The Course</p>
+        </h1>
 
-
-
-
-
-
-
+        <div className=" text-2xl mt-3 max-w-md mx-auto text-gray-900 sm:text-lg md:mt-5 md:text-xl md:max-x-3xl">
+          Mammoth Links
+          <div className="w-full bg-gray-200 rounded-3xl overflow-hidden">
+            <div className="relative hover:opacity-75 h-72 ">
+              <Image
+                src={greenbasket}
+                alt="sunset"
+                layout="fill"
+                objectFit="cover"
+                className="absolute inset-0 object-cover"
+              />
+            </div>
+          </div>
+          <Link href="/course">
+            <a className=" inline-flex mx-2 flex-wrap mt-3 items-center justify-center px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+              Mammoth Links
+            </a>
+          </Link>
+        </div>
+      </div>
     </div>
   )
 }

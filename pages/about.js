@@ -1,7 +1,8 @@
 import Image from 'next/dist/client/image'
 import BackButton from '../components/BackButton'
+import Footer from '../components/Footer'
 
-function About() {
+function about() {
   return (
     <div className="min-h-screen bottom-6 mx-auto max-w-7xl px-4 sm:mt-24 md:mt-24 text-center">
       <h1 className="font-extrabold text-gray-900">
@@ -28,8 +29,10 @@ function About() {
       </p>
       <br />
       <BackButton />
+      <Footer/>
     </div>
+
   )
 }
 
-export default About
+export default about
