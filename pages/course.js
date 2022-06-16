@@ -1,5 +1,4 @@
 import BackButton from '../components/BackButton'
-import Grid from '../components/Grid'
 import LeftBlock from '../components/LeftBlock'
 import RightBlock from '../components/RightBlock'
 import tee from '../images/tee.webp'
