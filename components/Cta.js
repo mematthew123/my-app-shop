@@ -34,20 +34,7 @@ function Cta() {
           We are the champions of disc golf
         </h2>
       </motion.div>
-
       <div className="mt-10 max-w-md mx-auto">
-        {/* <div className=" bg-gray-200 rounded-3xl overflow-hidden min-w-full">
-            <div className="relative group-hover:opacity-75 h-72 ">
-              <Image
-                src={tee}
-                className=" rounded-lg overflow-hidden object-cover "
-                alt="throw"
-                width={1200}
-                height={800}
-              />
-            </div>
-          </div> */}
-
         <div className=" justify-center flex flex-col md:flex-row">
           <Link href="/shop">
             <a className="inline-flex mx-2 flex-wrap mt-3 items-center justify-center gap-2 px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
